@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="./bc remove logo.webp">
+  <title>Brokerage</title>
+  <link rel="stylesheet" href="./resource.css">
+</head>
+<body>
+
+<header class="header" id="site-header">
+  <div class="right">
+    <a class="brand" href="./home2.html" title="Hari IT Solutions">
+      <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+      <div class="brand-title">
+        <span class="title">STACKLY</span>
+      </div>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">☰</button>
+  </div>
+
+  <div class="left">
+    <nav id="main-nav" class="navBar" aria-label="Main navigation">
+      <div class="navLinks">
+        <ul class="linkRight">
+          <li class="dropdown">
+            <a href="./home2.html" aria-haspopup="true" aria-expanded="false">Home ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+          <li><a href="./account.html">Account Opening Section</a></li>
+          <li><a href="./resource.html">Resources Section</a></li>
+          <li><a href="./safety.html">Safety Section</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <button class="btn-cta" onclick="location.href='./log.html'">LogIn</button>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<section class="jump research-insights" data-animate="jump" id="research-insights" aria-labelledby="insights-title">
+  <div class="container">
+
+    <!-- Header -->
+    <header class="ri-header">
+      <h2 id="insights-title">Research & Market Insights</h2>
+      <p class="ri-sub">Latest stock / commodity / crypto trends, analysis reports, headlines and expert commentary.</p>
+    </header>
+
+    <!-- Ticker (static placeholders) -->
+    <div class="ri-ticker" role="region" aria-label="Market ticker">
+      <span><strong>NIFTY</strong> 22,450 <em class="up">+0.8%</em></span>
+      <span><strong>GOLD</strong> ₹58,900 <em>+0.2%</em></span>
+      <span><strong>BTC</strong> $42,800 <em class="down">-1.9%</em></span>
+    </div>
+
+    <!-- Grid: main + sidebar -->
+    <div class="ri-grid">
+
+      <!-- Main column -->
+      <main class="ri-main" role="main">
+
+        <!-- Filters (markup only) -->
+        <nav class="ri-filters" aria-label="Filter insights">
+          <button class="f-btn active">All</button>
+          <button class="f-btn">Stocks</button>
+          <button class="f-btn">Crypto</button>
+          <button class="f-btn">Commodities</button>
+        </nav>
+
+        <!-- Technical analysis -->
+        <article class="ri-item" aria-labelledby="tech-title">
+          <header>
+            <h3 id="tech-title">Technical Snapshot — NIFTY 50 <time datetime="2025-12-01">Dec 01, 2025</time></h3>
+          </header>
+          <p>Short-term momentum after breakout above 22,200. Watch support 22,000 and resistance 22,650.</p>
+          <ul>
+            <li>50-day SMA tilting up; RSI ~62.</li>
+            <li>Volume surge confirms breakout.</li>
+          </ul>
+          <a href="#" class="read-more">Read more</a>
+        </article>
+
+        <!-- Fundamental analysis -->
+        <article class="ri-item" aria-labelledby="fund-title">
+          <header>
+            <h3 id="fund-title">Fundamental Pick — Horizon Ltd (Q3) <time datetime="2025-11-30">Nov 30, 2025</time></h3>
+          </header>
+          <p>Earnings beat led by export demand; valuation attractive with P/E ~12.5.</p>
+          <ol>
+            <li>Revenue +14% YoY; EBITDA margin expanded.</li>
+            <li>Strong free cash flow; buyback announced.</li>
+          </ol>
+          <a href="#" class="read-more">Read more</a>
+        </article>
+
+        <!-- News headlines -->
+        <section class="ri-news" aria-labelledby="news-title">
+          <h4 id="news-title">Market Headlines</h4>
+          <ul>
+            <li><a href="#">Rupee steadies after RBI remarks</a> <time>1h</time></li>
+            <li><a href="#">Global crude rises on supply concerns</a> <time>3h</time></li>
+            <li><a href="#">IT hiring outlook improved for Q4</a> <time>5h</time></li>
+          </ul>
+        </section>
+
+        <!-- Expert comment -->
+        <section class="ri-experts" aria-labelledby="experts-title">
+          <h4 id="experts-title">Expert Commentary</h4>
+          <blockquote>“This consolidation is healthy — wait for confirmation above resistance before adding exposure.” <cite>— R. Mehta</cite></blockquote>
+        </section>
+
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="ri-side" role="complementary" aria-labelledby="side-title">
+        <h4 id="side-title">Quick Snapshot</h4>
+
+        <div class="sidebar-box">
+          <h5>Trending</h5>
+          <ul class="trending">
+            <li><a href="#">HORIZON ↑6.2%</a></li>
+            <li><a href="#">INFOTEX ↓3.0%</a></li>
+            <li><a href="#">GOLDRUN ↑1.4%</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-box">
+          <h5>Subscribe</h5>
+          <form id="subscribeForm" class="subscribe-form" action="#" method="post" aria-label="Subscribe to insights" novalidate>
+            <input id="subscribeEmail" type="email" placeholder="you@email.com" required>
+            <button id="subscribeBtn" type="submit">Subscribe</button>
+
+            <!-- accessible error message area (hidden by default) -->
+            <p id="subscribeError" class="sr-error" aria-live="polite" style="display:none;">
+              plz fill the details.
+            </p>
+          </form>
+        </div>
+      </aside>
+
+    </div> <!-- /.ri-grid -->
+
+  </div> <!-- /.container -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="fade learning-section" id="learning" data-animate="fade" aria-labelledby="learning-title">
+  <div class="learn-wrap">
+
+    <header class="learn-header">
+      <h2 id="learning-title">Learning & Education</h2>
+      <p class="learn-sub">Step-by-step tutorials, video guides, e-books and quizzes to improve your trading skills.</p>
+    </header>
+
+    <div class="learn-grid">
+
+      <!-- Tutorials list -->
+      <div class="learn-tutorials" aria-labelledby="tutorials-title">
+        <h3 id="tutorials-title">Tutorials for Beginners</h3>
+
+        <ul class="tutorial-list">
+          <li>
+            <strong>Intro to Stocks</strong>
+            <p>What are stocks, how markets work, basic order types.</p>
+            <a href="#" class="cta-link">View Tutorial</a>
+          </li>
+          <li>
+            <strong>Derivatives Basics</strong>
+            <p>Futures & options explained with examples and risks.</p>
+            <a href="#" class="cta-link">View Tutorial</a>
+          </li>
+          <li>
+            <strong>Mutual Funds 101</strong>
+            <p>Types of funds, SIPs, and portfolio basics for long-term investing.</p>
+            <a href="#" class="cta-link">View Tutorial</a>
+          </li>
+        </ul>
+
+        <div class="learn-actions">
+          <a href="#" class="btn primary">Start Learning</a>
+          <a href="#" class="btn outline">View All Tutorials</a>
+        </div>
+      </div>
+
+      <!-- Media / ebooks / quiz -->
+      <aside class="learn-side" aria-labelledby="resources-title">
+        <h3 id="resources-title">Media & Resources</h3>
+
+        <!-- Video / webinar -->
+        <div class="resource-block">
+          <h4>Video Guide</h4>
+          <div class="video-thumb" role="img" aria-label="Video thumbnail: How to read charts">
+            <!-- Replace with actual <img> or embed -->
+            <span>▶ How to Read Charts (10m)</span>
+          </div>
+          <a href="#" class="cta-link">Watch Webinar</a>
+        </div>
+
+        <!-- E-books -->
+        <div class="resource-block">
+          <h4>E-book / PDF</h4>
+          <ul class="ebooks">
+            <li><a href="#" class="file">Trading Strategies.pdf <small>• 12 pages</small></a></li>
+            <li><a href="#" class="file">Risk Management.pdf <small>• 8 pages</small></a></li>
+          </ul>
+          <a href="#" class="cta-link">Download E-books</a>
+        </div>
+
+        <!-- Quiz -->
+        <div class="resource-block">
+          <h4>Quick Quiz</h4>
+          <p>Test your basics — 5 questions, 2 min.</p>
+          <a href="#" class="btn small">Take Quiz</a>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+</section>
+
+<!-- <section class="slide" data-animate="slide">Slide Box</section> -->
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <a class="brand" href="./home2.html" title="Hari IT Solutions">
+        <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+        <div class="brand-title">
+          <span class="title">STACKLY</span>
+        </div>
+      </a>
+
+      <div>
+        <h3 class="footer-title">About Us</h3>
+        <p class="footer-text">We provide the best products at the best prices. Your satisfaction is our priority.</p>
+        <div class="footer-social">
+          <a href="./404.html" class="social-icon">
+            <img src="./facebook (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./twitter (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./instagram (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./linkedin (1).webp" alt="">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-title">Quick Links</h3>
+      <ul class="footer-list">
+        <li><a href="./home2.html">Home</a></li>
+        <li><a href="./account.html">Account Opening Section</a></li>
+        <li><a href="./resource.html">Resources Section</a></li>
+        <li><a href="./safety.html">Safety Section</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="./dashboard.html">DashBoard</a></li>
+        <li><a href="./login.html">LogIn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3 class="footer-title">Contact</h3>
+      <p class="footer-text">123 gandhi St, City, Country</p>
+      <p class="footer-text mail">Email:support@brokerage.com</p>
+      <p class="footer-text">Phone: +123 456 7890</p>
+      <!-- <div class="footer-newsletter">
+        <input type="email" placeholder="Your email" class="newsletter-input">
+        <button class="newsletter-btn">Subscribe</button>
+      </div> -->
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 brokerage. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="./resource.js"></script>
+</body>
+</html>

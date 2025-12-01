@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="./bc remove logo.webp">
+  <title>Brokerage</title>
+  <link rel="stylesheet" href="./safety.css">
+</head>
+<body>
+
+<header class="header" id="site-header">
+  <div class="right">
+    <a class="brand" href="./home2.html" title="Hari IT Solutions">
+      <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+      <div class="brand-title">
+        <span class="title">STACKLY</span>
+      </div>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">☰</button>
+  </div>
+
+  <div class="left">
+    <nav id="main-nav" class="navBar" aria-label="Main navigation">
+      <div class="navLinks">
+        <ul class="linkRight">
+          <li class="dropdown">
+            <a href="./home2.html" aria-haspopup="true" aria-expanded="false">Home ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+          <li><a href="./account.html">Account Opening Section</a></li>
+          <li><a href="./resource.html">Resources Section</a></li>
+          <li><a href="./safety.html">Safety Section</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <button class="btn-cta" onclick="location.href='./log.html'">LogIn</button>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<section class="jump security-section" data-animate="jump" aria-labelledby="security-title">
+  <div class="container">
+    <header class="security-header">
+      <h2 id="security-title">Data Security &amp; Encryption</h2>
+      <p class="lead">
+        We protect your personal and trading data with industry-standard encryption,
+        secure access controls and continuous monitoring — so you can trade with confidence.
+      </p>
+    </header>
+
+    <div class="security-grid" role="list">
+      <article class="security-card" role="listitem" aria-labelledby="ssl-title">
+        <div class="icon" aria-hidden="true">
+          <!-- Lock SVG -->
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="11" width="18" height="10" rx="2" stroke="currentColor" stroke-width="1.5"></rect>
+            <path d="M7 11V8a5 5 0 1 1 10 0v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 id="ssl-title">256-bit SSL Encryption</h3>
+        <p class="desc">
+          All data in transit is protected using strong 256-bit SSL/TLS encryption to prevent eavesdropping.
+        </p>
+      </article>
+
+      <article class="security-card" role="listitem" aria-labelledby="mfa-title">
+        <div class="icon" aria-hidden="true">
+          <!-- Shield SVG -->
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l7 3v5c0 5-3.8 9.7-7 11-3.2-1.3-7-6-7-11V5l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <h3 id="mfa-title">Secure Login &amp; MFA</h3>
+        <p class="desc">
+          Multi-factor authentication (OTP / authenticator apps) and strong password policies protect account access.
+        </p>
+      </article>
+
+      <article class="security-card" role="listitem" aria-labelledby="biometric-title">
+        <div class="icon" aria-hidden="true">
+          <!-- Fingerprint SVG -->
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M7 6c-.2 1-1 4 0 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M17 6c.2 1 1 4 0 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+            <path d="M12 21v-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <h3 id="biometric-title">Biometric Login (optional)</h3>
+        <p class="desc">
+          Fingerprint and face recognition support for supported devices — fast and secure optional sign-in.
+        </p>
+      </article>
+
+      <article class="security-card" role="listitem" aria-labelledby="storage-title">
+        <div class="icon" aria-hidden="true">
+          <!-- Database SVG -->
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="12" cy="6" rx="8" ry="3" stroke="currentColor" stroke-width="1.5"></ellipse>
+            <path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6" stroke="currentColor" stroke-width="1.5"></path>
+            <path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6" stroke="currentColor" stroke-width="1.5"></path>
+          </svg>
+        </div>
+        <h3 id="storage-title">Encrypted Data Storage</h3>
+        <p class="desc">
+          Sensitive data at rest is encrypted using AES-256 and access is limited by role-based controls.
+        </p>
+      </article>
+
+      <article class="security-card" role="listitem" aria-labelledby="session-title">
+        <div class="icon" aria-hidden="true">
+          <!-- Clock / watch SVG -->
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"></circle>
+            <path d="M12 7v6l3 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </div>
+        <h3 id="session-title">Session Timeout &amp; Fraud Detection</h3>
+        <p class="desc">
+          Automatic session expiry, device recognition and real-time monitoring to detect suspicious activity promptly.
+        </p>
+      </article>
+    </div>
+
+    <div class="why">
+      <h4 class="why-title">Why it matters</h4>
+      <p class="why-text">
+        Security measures protect your funds and personal information, reduce fraud risk, and build trust with users.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="fade compliance-section" data-animate="fade" aria-labelledby="compliance-title">
+  <div class="comp-container">
+    <header class="comp-header">
+      <h2 id="compliance-title">Regulatory Compliance &amp; Certifications</h2>
+      <p class="comp-lead">
+        We adhere to national financial regulations and international standards to protect clients and maintain trust.
+      </p>
+    </header>
+
+    <div class="comp-grid" role="list">
+      <article class="comp-card" role="listitem" aria-labelledby="sebi-title">
+        <div class="comp-icon" aria-hidden="true">
+          <!-- Certificate SVG -->
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l3 3 4 1-1 4 1 4-4 1-3 3-3-3-4-1 1-4-1-4 4-1 3-3z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="comp-content">
+          <h3 id="sebi-title">SEBI Registration</h3>
+          <p class="comp-desc">
+            SEBI Reg. No.: <strong>INZ000123456</strong> — Registered and compliant with national regulations.
+          </p>
+        </div>
+      </article>
+
+      <article class="comp-card" role="listitem" aria-labelledby="exchanges-title">
+        <div class="comp-icon" aria-hidden="true">
+          <!-- Exchange SVG -->
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.25"/>
+            <path d="M8 9h8" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+            <path d="M8 13h8" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="comp-content">
+          <h3 id="exchanges-title">Exchange Memberships</h3>
+          <p class="comp-desc">
+            NSE: <strong>MEM12345</strong> · BSE: <strong>MEM67890</strong> · MCX: <strong>MEM54321</strong>
+          </p>
+        </div>
+      </article>
+
+      <article class="comp-card" role="listitem" aria-labelledby="certs-title">
+        <div class="comp-icon" aria-hidden="true">
+          <!-- Shield SVG -->
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l6 3v5c0 5-3.8 9.7-6 11-2.2-1.3-6-6-6-11V5l6-3z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="comp-content">
+          <h3 id="certs-title">ISO &amp; PCI Certifications</h3>
+          <p class="comp-desc">
+            ISO 27001: <strong>Certified</strong> · PCI-DSS: <strong>Compliant</strong> — Continuous security &amp; payment safety.
+          </p>
+        </div>
+      </article>
+
+      <article class="comp-card" role="listitem" aria-labelledby="process-title">
+        <div class="comp-icon" aria-hidden="true">
+          <!-- Process SVG -->
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.25"/>
+            <path d="M8 12h8" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+            <path d="M12 8v8" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="comp-content">
+          <h3 id="process-title">Compliance Processes</h3>
+          <p class="comp-desc">
+            KYC, AML monitoring, transaction surveillance and timely regulatory filings as standard processes.
+          </p>
+        </div>
+      </article>
+
+      <article class="comp-card" role="listitem" aria-labelledby="audit-title">
+        <div class="comp-icon" aria-hidden="true">
+          <!-- Report SVG -->
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="4" width="12" height="16" rx="2" stroke="currentColor" stroke-width="1.25"/>
+            <path d="M9 8h6" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+            <path d="M9 12h6" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="comp-content">
+          <h3 id="audit-title">Audit &amp; Reporting</h3>
+          <p class="comp-desc">
+            Regular third-party audits and transparent reporting ensure accountability and investor protection.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="comp-why">
+      <h4 class="comp-why-title">Why it matters</h4>
+      <p class="comp-why-text">
+        Publicly displayed registrations and certifications show legitimacy, reduce regulatory risk and build customer trust.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="slide funds-section" data-animate="slide" aria-labelledby="funds-title">
+  <div class="funds-inner">
+    <header class="funds-head">
+      <h2 id="funds-title">Funds Protection &amp; Safety of Assets</h2>
+      <p class="funds-sub">
+        We keep your money and securities safe with clear segregation, banking standards, and transparent policies.
+      </p>
+    </header>
+
+    <div class="funds-row" role="list">
+      <div class="funds-pill" role="listitem" aria-labelledby="seg-title">
+        <div class="pill-accent" aria-hidden="true"></div>
+        <div class="pill-body">
+          <div class="pill-icon" aria-hidden="true">
+            <!-- Bank SVG -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 10l9-6 9 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 10v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M19 10v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M3 16h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M8 16v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M16 16v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 id="seg-title">Segregated Client Accounts</h3>
+          <p class="pill-desc">Client funds are held separately from company operating accounts to prevent commingling.</p>
+        </div>
+      </div>
+
+      <div class="funds-pill" role="listitem" aria-labelledby="bank-title">
+        <div class="pill-accent" aria-hidden="true"></div>
+        <div class="pill-body">
+          <div class="pill-icon" aria-hidden="true">
+            <!-- Shield + Vault SVG -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="13" r="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 3v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 id="bank-title">Bank-grade Fund Storage</h3>
+          <p class="pill-desc">Funds stored with regulated banking partners using industry-standard custody arrangements.</p>
+        </div>
+      </div>
+
+      <div class="funds-pill" role="listitem" aria-labelledby="nomisuse-title">
+        <div class="pill-accent" aria-hidden="true"></div>
+        <div class="pill-body">
+          <div class="pill-icon" aria-hidden="true">
+            <!-- No Entry / Lock SVG -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7" y="10" width="10" height="7" rx="1.2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 14v-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M4 4l16 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 id="nomisuse-title">No Misuse of Client Securities</h3>
+          <p class="pill-desc">Client securities are never rehypothecated without explicit consent and are accounted for daily.</p>
+        </div>
+      </div>
+
+      <div class="funds-pill" role="listitem" aria-labelledby="margin-title">
+        <div class="pill-accent" aria-hidden="true"></div>
+        <div class="pill-body">
+          <div class="pill-icon" aria-hidden="true">
+            <!-- Scale / Policy SVG -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4v16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M5 8h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M13 16h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 id="margin-title">Transparent Margin Policies</h3>
+          <p class="pill-desc">Clear margin requirements and calls published in advance — no hidden leverage or surprise liquidations.</p>
+        </div>
+      </div>
+
+      <div class="funds-pill" role="listitem" aria-labelledby="insurance-title">
+        <div class="pill-accent" aria-hidden="true"></div>
+        <div class="pill-body">
+          <div class="pill-icon" aria-hidden="true">
+            <!-- Insurance / Shield SVG -->
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2l7 4v6c0 5-3.6 8-7 10-3.4-2-7-5-7-10V6l7-4z" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 id="insurance-title">Insurance Coverage</h3>
+          <p class="pill-desc">Where available, insurance policies provide additional protection for client assets against operational risks.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="funds-why">
+      <h4 class="funds-why-title">Why it matters</h4>
+      <p class="funds-why-text">
+        These safeguards prevent the loss or misuse of investor funds, increase transparency and strengthen confidence in our services.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <a class="brand" href="./home2.html" title="Hari IT Solutions">
+        <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+        <div class="brand-title">
+          <span class="title">STACKLY</span>
+        </div>
+      </a>
+
+      <div>
+        <h3 class="footer-title">About Us</h3>
+        <p class="footer-text">We provide the best products at the best prices. Your satisfaction is our priority.</p>
+        <div class="footer-social">
+          <a href="./404.html" class="social-icon">
+            <img src="./facebook (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./twitter (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./instagram (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./linkedin (1).webp" alt="">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-title">Quick Links</h3>
+      <ul class="footer-list">
+        <li><a href="./home2.html">Home</a></li>
+        <li><a href="./account.html">Account Opening Section</a></li>
+        <li><a href="./resource.html">Resources Section</a></li>
+        <li><a href="./safety.html">Safety Section</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="./dashboard.html">DashBoard</a></li>
+        <li><a href="./login.html">LogIn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3 class="footer-title">Contact</h3>
+      <p class="footer-text">123 gandhi St, City, Country</p>
+      <p class="footer-text mail">Email:support@brokerage.com</p>
+      <p class="footer-text">Phone: +123 456 7890</p>
+      <!-- <div class="footer-newsletter">
+        <input type="email" placeholder="Your email" class="newsletter-input">
+        <button class="newsletter-btn">Subscribe</button>
+      </div> -->
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 brokerage. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="./safety.js"></script>
+</body>
+</html>

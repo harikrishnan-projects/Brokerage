@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="./bc remove logo.webp">
+  <title>Sign In / Sign Up / Forgot</title>
+  <link rel="stylesheet" href="./login.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="card" role="main" aria-labelledby="auth-title">
+      <div class="logo" aria-hidden="false">
+        <div class="logo-mark"></div>
+        <div class="brand">Stackly</div>
+      </div>
+
+      <div class="auth-nav" role="tablist" aria-label="Authentication switch">
+        <button id="nav-signin" class="active" role="tab" aria-selected="true">Sign In</button>
+        <button id="nav-signup" role="tab">Sign Up</button>
+        <button id="nav-forgot" role="tab"></button>
+      </div>
+
+      <!-- Sign In view -->
+      <section id="view-signin" class="view active" aria-labelledby="signin-title">
+        <h1 id="signin-title" class="title">Welcome Back</h1>
+        <p class="subtitle">Enter your credentials to access your account.</p>
+
+        <form id="form-signin" class="auth-form" novalidate>
+          <div class="field">
+            <label for="si-email">Email Address</label>
+            <div class="input-wrap">
+              <input id="si-email" name="email" type="email" placeholder="name@example.com" required />
+              <span class="input-icon" aria-hidden="true">✉️</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="si-password">Password</label>
+            <div class="input-wrap">
+              <input id="si-password" name="password" type="password" placeholder="Enter your password" required />
+              <button type="button" class="eye" data-target="si-password" aria-label="toggle password visibility">👁️</button>
+            </div>
+          </div>
+
+          <div class="small-row">
+            <label class="checkbox">
+              <input id="si-remember" name="remember" type="checkbox" />
+              <span>Remember me</span>
+            </label>
+
+            <a class="forgot" href="#" id="link-forgot">Forgot Password?</a>
+          </div>
+
+          <p id="si-error" class="error" aria-live="polite" hidden>plz fill the valid details</p>
+
+          <button type="submit" class="primary-btn">Sign In</button>
+
+          <p class="signup-line">
+            Don't have an account?
+            <a href="#" id="link-signup">Sign Up</a>
+          </p>
+        </form>
+      </section>
+
+      <!-- Sign Up view -->
+      <section id="view-signup" class="view" aria-labelledby="signup-title">
+        <h1 id="signup-title" class="title">Create Account</h1>
+        <p class="subtitle">Sign up to access enterprise services, demos and quotes.</p>
+
+        <form id="form-signup" class="auth-form" novalidate>
+          <div class="field">
+            <label for="su-name">Full name</label>
+            <div class="input-wrap">
+              <input id="su-name" name="name" type="text" placeholder="Your full name" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="su-email">Email Address</label>
+            <div class="input-wrap">
+              <input id="su-email" name="email" type="email" placeholder="name@example.com" required />
+              <span class="input-icon" aria-hidden="true">✉️</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="su-password">Password</label>
+            <div class="input-wrap">
+              <input id="su-password" name="password" type="password" placeholder="Create a password (min 6 chars)" required />
+              <button type="button" class="eye" data-target="su-password" aria-label="toggle password visibility">👁️</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="su-confirm">Confirm Password</label>
+            <div class="input-wrap">
+              <input id="su-confirm" name="confirm" type="password" placeholder="Re-enter password" required />
+              <button type="button" class="eye" data-target="su-confirm" aria-label="toggle password visibility">👁️</button>
+            </div>
+          </div>
+
+          <p id="su-error" class="error" aria-live="polite" hidden>plz fill the valid details</p>
+
+          <button type="submit" class="primary-btn">Create Account</button>
+
+          <p class="signup-line">
+            Already have an account?
+            <a href="#" id="link-signin">Sign In</a>
+          </p>
+        </form>
+      </section>
+
+      <!-- Forgot Password view -->
+      <section id="view-forgot" class="view" aria-labelledby="forgot-title">
+        <h1 id="forgot-title" class="title">Forgot Password</h1>
+        <p class="subtitle">Enter your email and we'll send password reset instructions.</p>
+
+        <form id="form-forgot" class="auth-form" novalidate>
+          <div class="field">
+            <label for="fp-email">Email Address</label>
+            <div class="input-wrap">
+              <input id="fp-email" name="email" type="email" placeholder="name@example.com" required />
+              <span class="input-icon" aria-hidden="true">✉️</span>
+            </div>
+          </div>
+
+          <p id="fp-error" class="error" aria-live="polite" hidden>plz fill the valid details</p>
+
+          <button type="submit" class="primary-btn">Send Reset Link</button>
+
+          <p class="signup-line">
+            Remembered?
+            <a href="#" id="link-signin-2">Sign In</a>
+          </p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="./login.js"></script>
+</body>
+</html>

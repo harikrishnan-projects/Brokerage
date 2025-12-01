@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="./bc remove logo.webp">
+  <title>Brokerage</title>
+  <link rel="stylesheet" href="./home2.css">
+</head>
+<body>
+
+<header class="header" id="site-header">
+  <div class="right">
+    <a class="brand" href="./home2.html" title="Hari IT Solutions">
+      <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+      <div class="brand-title">
+        <span class="title">STACKLY</span>
+      </div>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">☰</button>
+  </div>
+
+  <div class="left">
+    <nav id="main-nav" class="navBar" aria-label="Main navigation">
+      <div class="navLinks">
+        <ul class="linkRight">
+          <li class="dropdown">
+            <a href="./home2.html" aria-haspopup="true" aria-expanded="false">Home ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="./index.html">Home 1</a></li>
+            </ul>
+          </li>
+          <li><a href="./account.html">Account Opening Section</a></li>
+          <li><a href="./resource.html">Resources Section</a></li>
+          <li><a href="./safety.html">Safety Section</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <button class="btn-cta" onclick="location.href='./log.html'">LogIn</button>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<section class="jump hero" data-animate="jump">
+   <div class="hero-content">
+    <div class="hero-text">
+      <h1>Trade Smarter. Anytime. Anywhere.</h1>
+      <p>Experience seamless trading on your mobile device with real-time insights and easy navigation.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn download">Download App</a>
+        <a href="#" class="btn demo">Try Demo</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="app-screenshot.png" alt="Mobile Trading App Screenshot">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="fade market-dashboard" data-animate="fade">
+  <h2 class="dashboard-title">Real-Time Market Dashboard</h2>
+
+  <div class="dashboard-content">
+    <!-- Live Candles -->
+    <div class="dashboard-card candles">
+      <h3>Live Candlestick Chart</h3>
+      <div class="placeholder">📈 BTC/USD Candles</div>
+    </div>
+
+    <!-- Top Gainers / Losers -->
+    <div class="dashboard-card gainers-losers">
+      <h3>Top Gainers / Losers</h3>
+      <ul>
+        <li><span>BTC</span> ↑ 2.15%</li>
+        <li><span>ETH</span> ↑ 1.85%</li>
+        <li><span>BNB</span> ↓ 0.95%</li>
+        <li><span>ADA</span> ↑ 3.20%</li>
+        <li><span>XRP</span> ↓ 1.10%</li>
+      </ul>
+    </div>
+
+    <!-- Market Heatmap -->
+    <div class="dashboard-card heatmap">
+      <h3>Market Heatmap</h3>
+      <div class="placeholder">🟢🟡🔴 Heatmap Overview</div>
+    </div>
+  </div>
+
+  <!-- Market Ticker -->
+  <div class="market-ticker">
+    <div class="ticker-track">
+      <span>
+        BTC ↑ 2.15% &nbsp;&nbsp; ETH ↑ 1.85% &nbsp;&nbsp; BNB ↓ 0.95% &nbsp;&nbsp; ADA ↑ 3.20% &nbsp;&nbsp; XRP ↓ 1.10% &nbsp;&nbsp; SOL ↑ 1.75% &nbsp;&nbsp; DOGE ↓ 0.60%
+      </span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="slide popular-instruments" data-animate="slide">
+  <h2 class="section-title">Popular Instruments to Trade</h2>
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="stocks">Stocks</button>
+    <button class="tab-btn" data-tab="indices">Indices</button>
+    <button class="tab-btn" data-tab="crypto">Crypto</button>
+    <button class="tab-btn" data-tab="commodities">Commodities</button>
+    <button class="tab-btn" data-tab="forex">Forex</button>
+  </div>
+
+  <div class="tab-content">
+    <!-- Stocks -->
+    <div class="tab-panel active" id="stocks">
+      <ul>
+        <li><span>AAPL</span> <span>↑ 1.25%</span></li>
+        <li><span>MSFT</span> <span>↑ 0.95%</span></li>
+        <li><span>AMZN</span> <span>↓ 0.45%</span></li>
+      </ul>
+    </div>
+
+    <!-- Indices -->
+    <div class="tab-panel" id="indices">
+      <ul>
+        <li><span>S&P 500</span> <span>↑ 0.85%</span></li>
+        <li><span>NASDAQ</span> <span>↑ 1.10%</span></li>
+        <li><span>DOW JONES</span> <span>↓ 0.30%</span></li>
+      </ul>
+    </div>
+
+    <!-- Crypto -->
+    <div class="tab-panel" id="crypto">
+      <ul>
+        <li><span>BTC</span> <span>↑ 2.15%</span></li>
+        <li><span>ETH</span> <span>↑ 1.85%</span></li>
+        <li><span>XRP</span> <span>↓ 1.10%</span></li>
+      </ul>
+    </div>
+
+    <!-- Commodities -->
+    <div class="tab-panel" id="commodities">
+      <ul>
+        <li><span>Gold</span> <span>↑ 0.75%</span></li>
+        <li><span>Silver</span> <span>↓ 0.50%</span></li>
+        <li><span>Crude Oil</span> <span>↑ 1.25%</span></li>
+      </ul>
+    </div>
+
+    <!-- Forex -->
+    <div class="tab-panel" id="forex">
+      <ul>
+        <li><span>EUR/USD</span> <span>↑ 0.15%</span></li>
+        <li><span>GBP/USD</span> <span>↓ 0.10%</span></li>
+        <li><span>USD/JPY</span> <span>↑ 0.05%</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="jump tech-speed" data-animate="jump">
+  <div class="tech-container">
+    <h2 class="section-title">Technology & Speed</h2>
+    <p class="section-subtitle">Our platform is built for maximum performance and lightning-fast execution.</p>
+
+    <div class="tech-cards">
+      <div class="tech-card">
+        <h3>Millisecond Order Execution</h3>
+        <p>Execute trades instantly with minimal latency, ensuring you never miss an opportunity.</p>
+      </div>
+      <div class="tech-card">
+        <h3>High-Performance Trading Engine</h3>
+        <p>Robust engine capable of handling thousands of transactions per second.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Smart Order Routing</h3>
+        <p>Automatically routes orders to the best liquidity providers for optimal pricing.</p>
+      </div>
+      <div class="tech-card">
+        <h3>Automated Trading Bots</h3>
+        <p>Integrate and run algorithmic strategies with precision and speed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="fade community-trading" data-animate="fade">
+  <div class="community-container">
+    <h2 class="section-title">Community & Social Trading</h2>
+    <p class="section-subtitle">Connect, learn, and trade with the world’s top traders in real-time.</p>
+
+    <div class="community-cards">
+      <div class="community-card">
+        <h3>Copy Experienced Traders</h3>
+        <p>Follow and replicate the strategies of top-performing traders to maximize your potential.</p>
+      </div>
+      <div class="community-card">
+        <h3>Live Community Chat</h3>
+        <p>Engage with traders worldwide, share insights, and discuss market trends instantly.</p>
+      </div>
+      <div class="community-card">
+        <h3>Public Portfolios</h3>
+        <p>View and learn from the portfolios of successful traders to make informed decisions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="slide rewards-section-alt" data-animate="slide">
+  <div class="rewards-container-alt">
+    <h2 class="section-title">Rewards & Referral Program</h2>
+    <p class="section-subtitle">Earn bonuses, cashback, and tiered rewards by trading and inviting friends.</p>
+
+    <div class="rewards-features">
+      <div class="reward-feature">
+        <div class="feature-icon">🎁</div>
+        <div class="feature-text">
+          <h3>₹500 Welcome Bonus</h3>
+          <p>Get a ₹500 bonus when you sign up and make your first trade.</p>
+        </div>
+      </div>
+
+      <div class="reward-feature">
+        <div class="feature-icon">💰</div>
+        <div class="feature-text">
+          <h3>Referral Commission</h3>
+          <p>Invite friends and earn a commission for every successful referral.</p>
+        </div>
+      </div>
+
+      <div class="reward-feature">
+        <div class="feature-icon">🏆</div>
+        <div class="feature-text">
+          <h3>Tiered Rewards System</h3>
+          <p>Unlock higher rewards as you trade more and reach new tiers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="jump deposits-section" data-animate="jump">
+  <div class="deposits-container">
+    <h2 class="section-title">Seamless Deposits & Withdrawals</h2>
+    <p class="section-subtitle">Add funds and withdraw effortlessly with multiple banking options.</p>
+
+    <div class="deposit-steps">
+      <div class="deposit-step">
+        <div class="step-icon">🏦</div>
+        <h3>Add Bank</h3>
+        <p>Link your bank account securely to start trading.</p>
+      </div>
+
+      <div class="deposit-step">
+        <div class="step-icon">💸</div>
+        <h3>Instant Deposit</h3>
+        <p>Deposit funds instantly and never miss a trading opportunity.</p>
+      </div>
+
+      <div class="deposit-step">
+        <div class="step-icon">⏩</div>
+        <h3>Fast Withdrawal</h3>
+        <p>Withdraw your earnings quickly with minimal delay.</p>
+      </div>
+
+      <div class="deposit-step">
+        <div class="step-icon">💳</div>
+        <h3>UPI / Net Banking</h3>
+        <p>Choose from multiple payment options for ultimate convenience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="fade" data-animate="fade">Fade In Box</section>
+
+<section class="slide" data-animate="slide">Slide Box</section> -->
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <a class="brand" href="./home2.html" title="Hari IT Solutions">
+        <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+        <div class="brand-title">
+          <span class="title">STACKLY</span>
+        </div>
+      </a>
+
+      <div>
+        <h3 class="footer-title">About Us</h3>
+        <p class="footer-text">We provide the best products at the best prices. Your satisfaction is our priority.</p>
+        <div class="footer-social">
+          <a href="./404.html" class="social-icon">
+            <img src="./facebook (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./twitter (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./instagram (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./linkedin (1).webp" alt="">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-title">Quick Links</h3>
+      <ul class="footer-list">
+        <li><a href="./home2.html">Home</a></li>
+        <li><a href="./account.html">Account Opening Section</a></li>
+        <li><a href="./resource.html">Resources Section</a></li>
+        <li><a href="./safety.html">Safety Section</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="./dashboard.html">DashBoard</a></li>
+        <li><a href="./login.html">LogIn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3 class="footer-title">Contact</h3>
+      <p class="footer-text">123 gandhi St, City, Country</p>
+      <p class="footer-text mail">Email:support@brokerage.com</p>
+      <p class="footer-text">Phone: +123 456 7890</p>
+      <!-- <div class="footer-newsletter">
+        <input type="email" placeholder="Your email" class="newsletter-input">
+        <button class="newsletter-btn">Subscribe</button>
+      </div> -->
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 brokerage. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="./home2.js"></script>
+</body>
+</html>

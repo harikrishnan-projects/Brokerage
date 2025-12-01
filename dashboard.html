@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./bc remove logo.webp">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <h1>SmartBroker</h1>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="#" class="active" data-target="dashboard">Dashboard</a></li>
+          <li><a href="#" data-target="portfolio">Portfolio</a></li>
+          <li><a href="#" data-target="orders">Orders</a></li>
+          <li><a href="#" data-target="markets">Markets</a></li>
+          <li><a href="#" data-target="reports">Reports</a></li>
+          <li><a href="#" data-target="settings">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <!-- Top Header -->
+      <header class="top-header">
+        <h2>Welcome, Trader</h2>
+        <div class="header-actions">
+          <button class="btn-alert">Notifications</button>
+          <button class="btn-profile">Profile</button>
+        </div>
+      </header>
+
+      <!-- Dashboard Tab Contents -->
+      <section class="tab-content active" id="dashboard">
+        <h3>Dashboard Overview</h3>
+        <div class="dashboard-cards">
+          <div class="card">
+            <h3>Account Balance</h3>
+            <p>₹ 1,25,000</p>
+          </div>
+          <div class="card">
+            <h3>Open Positions</h3>
+            <p>5</p>
+          </div>
+          <div class="card">
+            <h3>Today's P&L</h3>
+            <p>₹ 2,450</p>
+          </div>
+          <div class="card">
+            <h3>Available Margin</h3>
+            <p>₹ 50,000</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-content" id="portfolio">
+        <h3>Portfolio</h3>
+        <p>Here is your investment portfolio overview, including stocks, ETFs, and mutual funds.</p>
+        <ul>
+          <li>RELIANCE: 50 shares</li>
+          <li>TCS: 30 shares</li>
+          <li>INFY: 40 shares</li>
+        </ul>
+      </section>
+
+      <section class="tab-content" id="orders">
+        <h3>Orders</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th>Type</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>RELIANCE</td>
+              <td>Buy</td>
+              <td>10</td>
+              <td>₹ 2,350</td>
+              <td>Executed</td>
+            </tr>
+            <tr>
+              <td>TCS</td>
+              <td>Sell</td>
+              <td>5</td>
+              <td>₹ 3,200</td>
+              <td>Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="tab-content" id="markets">
+        <h3>Markets</h3>
+        <p>Live indices and market trends. Track NSE and BSE updates.</p>
+        <ul>
+          <li>Nifty 50: 18,500 ↑ 0.5%</li>
+          <li>Sensex: 62,200 ↑ 0.4%</li>
+          <li>USD/INR: 83.20</li>
+        </ul>
+      </section>
+
+      <section class="tab-content" id="reports">
+        <h3>Reports</h3>
+        <p>View daily, weekly, and monthly trading reports and performance summaries.</p>
+      </section>
+
+      <section class="tab-content" id="settings">
+        <h3>Settings</h3>
+        <p>Manage account preferences, security settings, and notifications.</p>
+      </section>
+    </main>
+
+  </div>
+
+  <!-- JavaScript for tab switching -->
+  <script>
+    const tabs = document.querySelectorAll('.sidebar-nav a');
+    const contents = document.querySelectorAll('.tab-content');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // remove active class from all tabs
+        tabs.forEach(t => t.classList.remove('active'));
+        // add active class to clicked tab
+        this.classList.add('active');
+
+        // hide all tab contents
+        contents.forEach(c => c.classList.remove('active'));
+        // show selected content
+        const target = document.getElementById(this.dataset.target);
+        target.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

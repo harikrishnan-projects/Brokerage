@@ -1,0 +1,269 @@
+
+/* base box-sizing */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* page defaults */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+ul, li { list-style: none; }
+a { text-decoration: none; }
+
+
+/* Main wrapper */
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background-color: rgb(203, 237, 232);
+}
+
+/* Card */
+.card {
+  width: 420px;
+  background-color: rgb(23, 170, 151);
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(12, 32, 64, 0.08);
+  padding: 34px 30px;
+  text-align: center;
+}
+
+/* Logo area */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  transform: rotate(45deg);
+  background:white;
+  box-shadow: 0 6px 18px rgba(216, 243, 38, 0.12);
+}
+
+.brand {
+  font-weight:bold;
+  letter-spacing: 0.2px;
+  font-size:2rem;
+  color: white;
+}
+
+/* Nav between views */
+.auth-nav {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.auth-nav button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-size: 13px;
+  color:black;
+  border-radius: 8px;
+}
+
+.auth-nav button.active {
+  background: rgba(11,97,255,0.08);
+  color: white;
+  font-weight: 600;
+}
+
+/* Titles */
+.title {
+  margin-top: 6px;
+  font-size: 24px;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.subtitle {
+  margin-top: 0;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Form common */
+.auth-form {
+  text-align: left;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+.field label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-wrap input[type="email"],
+.input-wrap input[type="password"],
+.input-wrap input[type="text"] {
+  width: 100%;
+  padding: 14px 44px 14px 14px;
+  font-size: 14px;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 99, 99, 0.06);
+  background: #fff;
+  outline: none;
+  transition: box-shadow .12s, border-color .12s;
+}
+
+.input-wrap input:focus {
+  border-color: rgba(11,97,255,0.18);
+  box-shadow: 0 8px 20px rgba(11,97,255,0.06);
+}
+
+.input-icon {
+  position: absolute;
+  right: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.small-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: white;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+}
+
+.forgot {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+
+.error {
+  color: #c53030;
+  font-size: 13px;
+  margin: 8px 0 12px;
+  text-align: left;
+}
+
+input.invalid {
+  border-color: rgba(255, 80, 80, 0.9) !important;
+  box-shadow: 0 4px 18px rgba(255, 80, 80, 0.08);
+}
+
+.primary-btn {
+  display: block;
+  width: 100%;
+  padding: 14px 18px;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  background:white;
+  box-shadow: 0 12px 30px rgba(216, 243, 38, 0.18);
+  color: black;
+}
+
+.signup-line {
+  text-align: center;
+  font-size: 13px;
+  color: white;
+}
+
+.signup-line a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hide views by default */
+.view {
+  display: none;
+}
+
+.view.active {
+  display: block;
+}
+
+/* Small screens: <= 768px */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 420px;
+    padding: 22px;
+    border-radius: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .input-wrap input[type="email"],
+  .input-wrap input[type="password"],
+  .input-wrap input[type="text"] {
+    padding: 12px 44px 12px 12px;
+    font-size: 14px;
+  }
+
+  .primary-btn {
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+}

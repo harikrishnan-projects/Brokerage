@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="./bc remove logo.webp">
+  <title>Brokerage</title>
+  <link rel="stylesheet" href="./price.css">
+</head>
+<body>
+
+<header class="header" id="site-header">
+  <div class="right">
+    <a class="brand" href="./index.html" title="Hari IT Solutions">
+      <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+      <div class="brand-title">
+        <span class="title">STACKLY</span>
+      </div>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">☰</button>
+  </div>
+
+  <div class="left">
+    <nav id="main-nav" class="navBar" aria-label="Main navigation">
+      <div class="navLinks">
+        <ul class="linkRight">
+          <li class="dropdown">
+            <a href="./home2.html" aria-haspopup="true" aria-expanded="false">Home ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="./home2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li><a href="./service.html">Brokerage Services</a></li>
+          <!-- <li><a href="./finance.html">Top Categories</a></li> -->
+          <li><a href="./price.html">Pricing & Brokerage Plans</a></li>
+          <!-- <li><a href="./testimonial.html">Security Section</a></li> -->
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./dashboard.html">DashBoard</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <button class="btn-cta" onclick="location.href='./login.html'">LogIn</button>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="jump pricing-section" data-animate="jump" aria-labelledby="pricing-title">
+  <div class="pricing-container">
+
+    <header class="pricing-header">
+      <h2 id="pricing-title" class="pricing-heading">
+        Transparent &amp; Low-Cost Brokerage Plans
+      </h2>
+
+      <p class="pricing-intro">
+        Choose a plan that fits your trading style. No hidden fees.
+      </p>
+    </header>
+
+    <div class="pricing-body">
+      <div class="pricing-left">
+        <p class="pricing-copy">
+          Our pricing model is simple and predictable — zero account opening charges, a flat fee per executed order and free equity delivery where applicable. Pick the plan that matches your activity and get institutional-grade execution without surprises.
+        </p>
+
+        <div class="pricing-ctas">
+          <a class="pricing-btn primary" href="#" aria-label="View plans">View Plans</a>
+          <a class="pricing-btn outline" href="#" aria-label="Contact sales">Contact Sales</a>
+        </div>
+      </div>
+
+      <aside class="pricing-highlights" aria-hidden="false">
+        <ul class="highlights-list">
+          <li class="highlight">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="highlight-text">
+              <strong>Zero account opening charges</strong>
+              <span class="hint">Start trading with no upfront cost</span>
+            </div>
+          </li>
+
+          <li class="highlight">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="highlight-text">
+              <strong>Flat fee per executed order</strong>
+              <span class="hint">Predictable costs for active traders</span>
+            </div>
+          </li>
+
+          <li class="highlight">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="highlight-text">
+              <strong>Free equity delivery</strong>
+              <span class="hint">No brokerage on delivery trades (where applicable)</span>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="fade plans-section" data-animate="fade" aria-labelledby="plans-title">
+  <div class="plans-container">
+
+    <header class="plans-header">
+      <h2 id="plans-title" class="plans-heading">
+        Choose a Plan That Suits Your Trading Style
+      </h2>
+
+      <p class="plans-intro">
+        Transparent pricing and tailored features — pick Basic, Pro Trader, or Elite for advanced benefits.
+      </p>
+    </header>
+
+    <div class="plans-grid" role="list">
+
+      <!-- Basic Plan -->
+      <article class="plan-card" role="listitem" aria-labelledby="plan-basic">
+        <div class="plan-badge" aria-hidden="true">Basic</div>
+
+        <h3 id="plan-basic" class="plan-name">Basic Plan</h3>
+
+        <div class="plan-price">
+          <span class="currency">₹</span>
+          <span class="amount">20</span>
+          <span class="per">/ order</span>
+        </div>
+
+        <ul class="plan-features">
+          <li>Free equity delivery</li>
+          <li>Standard charting tools</li>
+          <li>Basic research reports</li>
+        </ul>
+
+        <a class="plan-cta" href="#" aria-label="Choose Basic Plan">Choose Plan</a>
+      </article>
+
+      <!-- Pro Trader Plan (recommended) -->
+      <article class="plan-card plan-recommended" role="listitem" aria-labelledby="plan-pro">
+        <div class="plan-badge" aria-hidden="true">Pro</div>
+
+        <div class="ribbon" aria-hidden="true">Recommended</div>
+
+        <h3 id="plan-pro" class="plan-name">Pro Trader Plan</h3>
+
+        <div class="plan-price">
+          <span class="currency">₹</span>
+          <span class="amount">12</span>
+          <span class="per">/ order</span>
+        </div>
+
+        <ul class="plan-features">
+          <li>Lower intraday charges</li>
+          <li>Priority support</li>
+          <li>Advanced charting & scanners</li>
+        </ul>
+
+        <a class="plan-cta" href="#" aria-label="Choose Pro Trader Plan">Start Trading</a>
+      </article>
+
+      <!-- Elite / Premium Plan -->
+      <article class="plan-card" role="listitem" aria-labelledby="plan-elite">
+        <div class="plan-badge" aria-hidden="true">Elite</div>
+
+        <h3 id="plan-elite" class="plan-name">Elite / Premium Plan</h3>
+
+        <div class="plan-price">
+          <span class="currency">₹</span>
+          <span class="amount">0</span>
+          <span class="per">/ F&O*</span>
+        </div>
+
+        <ul class="plan-features">
+          <li>Cashback on trades</li>
+          <li>API trading access</li>
+          <li>Zero brokerage on F&amp;O</li>
+        </ul>
+
+        <a class="plan-cta" href="#" aria-label="Choose Elite Plan">Choose Plan</a>
+      </article>
+
+    </div>
+
+    <p class="plans-note">
+      *Terms apply. F&O zero-brokerage for eligible account types only.
+    </p>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="slide faq-section" data-animate="slide" aria-labelledby="faq-title">
+  <div class="faq-container">
+
+    <header class="faq-header">
+      <h2 id="faq-title" class="faq-heading">
+        Frequently Asked Questions
+      </h2>
+
+      <p class="faq-intro">
+        Quick answers to common questions about pricing, charges and equity delivery.
+      </p>
+    </header>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-question">Do you have hidden charges?</summary>
+        <div class="faq-answer">
+          <p>
+            No. We follow a transparent pricing model. All fees such as brokerage, exchange
+            charges, taxes and any statutory levies are shown at the point of order and on
+            trade confirmations. Any promotional offers will be clearly communicated.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">How is brokerage calculated?</summary>
+        <div class="faq-answer">
+          <p>
+            Brokerage depends on the plan you choose. We offer flat fees per executed order
+            and special rates for Pro and Elite plans. Brokerage for each trade is displayed
+            in the order confirmation and on your billing statements.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">What taxes will be applied?</summary>
+        <div class="faq-answer">
+          <p>
+            Standard taxes and statutory charges may apply, such as GST (where applicable),
+            exchange fees, SEBI charges and stamp duty per your jurisdiction. These are shown
+            separately on the trade invoice.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">Is equity delivery free?</summary>
+        <div class="faq-answer">
+          <p>
+            Equity delivery is free for most account types as described in our pricing overview.
+            Some special or promotional accounts may vary — always check the plan details.
+          </p>
+        </div>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <a class="brand" href="./index.html" title="Hari IT Solutions">
+        <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+        <div class="brand-title">
+          <span class="title">STACKLY</span>
+        </div>
+      </a>
+
+      <div>
+        <h3 class="footer-title">About Us</h3>
+        <p class="footer-text">We provide the best products at the best prices. Your satisfaction is our priority.</p>
+        <div class="footer-social">
+          <a href="./404.html" class="social-icon">
+            <img src="./facebook (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./twitter (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./instagram (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./linkedin (1).webp" alt="">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-title">Quick Links</h3>
+      <ul class="footer-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./service.html">Brokerage Services</a></li>
+        <li><a href="./price.html">Pricing & Brokerage Plans</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="./dashboard.html">DashBoard</a></li>
+        <li><a href="./login.html">LogIn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3 class="footer-title">Contact</h3>
+      <p class="footer-text">123 gandhi St, City, Country</p>
+      <p class="footer-text mail">Email:support@brokerage.com</p>
+      <p class="footer-text">Phone: +123 456 7890</p>
+      <!-- <div class="footer-newsletter">
+        <input type="email" placeholder="Your email" class="newsletter-input">
+        <button class="newsletter-btn">Subscribe</button>
+      </div> -->
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 brokerage. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="./price.js"></script>
+</body>
+</html>

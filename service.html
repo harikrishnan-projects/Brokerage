@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="./bc remove logo.webp">
+  <title>Brokerage</title>
+  <link rel="stylesheet" href="./service.css">
+</head>
+<body>
+
+<header class="header" id="site-header">
+  <div class="right">
+    <a class="brand" href="./index.html" title="Hari IT Solutions">
+      <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+      <div class="brand-title">
+        <span class="title">STACKLY</span>
+      </div>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">☰</button>
+  </div>
+
+  <div class="left">
+    <nav id="main-nav" class="navBar" aria-label="Main navigation">
+      <div class="navLinks">
+        <ul class="linkRight">
+          <li class="dropdown">
+            <a href="./home2.html" aria-haspopup="true" aria-expanded="false">Home ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="./home2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li><a href="./service.html">Brokerage Services</a></li>
+          <!-- <li><a href="./finance.html">Top Categories</a></li> -->
+          <li><a href="./price.html">Pricing & Brokerage Plans</a></li>
+          <!-- <li><a href="./testimonial.html">Security Section</a></li> -->
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./dashboard.html">DashBoard</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <button class="btn-cta" onclick="location.href='./login.html'">LogIn</button>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<section class="jump service-section" data-animate="jump" aria-labelledby="service-title">
+  <div class="service-container">
+
+    <div class="service-left">
+      <h2 id="service-title" class="service-heading">
+        Comprehensive Brokerage Services
+      </h2>
+
+      <p class="service-desc">
+        Trade a wide range of instruments — Equities, ETFs, Forex, Commodities and Cryptocurrencies — with a single, secure account.
+      </p>
+
+      <p class="service-more">
+        Our platform offers institutional-grade execution, transparent pricing and powerful market access for every trader.
+      </p>
+
+      <div class="service-ctas">
+        <a href="#" class="btn-primary" aria-label="Open an account">Open an Account</a>
+        <a href="#" class="btn-outline" aria-label="Learn more">Learn More</a>
+      </div>
+    </div>
+
+    <aside class="service-right" aria-hidden="false">
+      <ul class="highlights-list">
+        <li class="highlight-item">
+          <span class="hi-icon" aria-hidden="true">
+            <!-- lightning SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+              <path d="M13 2L3 14h8l-1 8L21 10h-8l0-8z" fill="rgb(23,170,151)"/>
+            </svg>
+          </span>
+          <div class="hi-text">
+            <strong>Fast execution</strong>
+            <span class="hi-sub">Sub-second order fills</span>
+          </div>
+        </li>
+
+        <li class="highlight-item">
+          <span class="hi-icon" aria-hidden="true">
+            <!-- wallet SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+              <path d="M2 7h20v10H2z" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="18" cy="12" r="1.5" fill="rgb(23,170,151)"/>
+            </svg>
+          </span>
+          <div class="hi-text">
+            <strong>Low brokerage fees</strong>
+            <span class="hi-sub">Transparent, competitive pricing</span>
+          </div>
+        </li>
+
+        <li class="highlight-item">
+          <span class="hi-icon" aria-hidden="true">
+            <!-- chart SVG -->
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+              <path d="M3 17h18" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7 13v4" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 9v8" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17 5v12" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <div class="hi-text">
+            <strong>Real-time market access</strong>
+            <span class="hi-sub">Live quotes, charts & news</span>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="fade services-breakdown" data-animate="fade" aria-labelledby="services-breakdown-title">
+  <div class="services-breakdown__container">
+
+    <header class="services-breakdown__header">
+      <h2 id="services-breakdown-title" class="services-breakdown__heading">
+        Brokerage Services — Detailed Breakdown
+      </h2>
+
+      <p class="services-breakdown__intro">
+        Explore our core services. Click “Know More” on any card to dive deeper into features, pricing and how to get started.
+      </p>
+    </header>
+
+    <div class="services-breakdown__grid" role="list">
+
+      <!-- Equity Trading -->
+      <article class="service-card" role="listitem" aria-labelledby="svc-equity">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+            <path d="M3 17h4v-7H3v7zM9 17h4v-11H9v11zM15 17h4v-4h-4v4z" fill="rgb(23,170,151)"/>
+          </svg>
+        </div>
+
+        <h3 id="svc-equity" class="service-card__title">Equity Trading</h3>
+
+        <p class="service-card__desc">
+          Trade shares on major domestic and international exchanges with competitive pricing and fast order execution.
+        </p>
+
+        <a class="service-card__cta" href="#" aria-label="Know more about Equity Trading">Know More</a>
+      </article>
+
+      <!-- Derivatives -->
+      <article class="service-card" role="listitem" aria-labelledby="svc-derivatives">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+            <path d="M3 12h6l3 6 3-10 4 4" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M3 12h6" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+
+        <h3 id="svc-derivatives" class="service-card__title">Derivatives (F&amp;O)</h3>
+
+        <p class="service-card__desc">
+          Futures and options trading with margin tools, risk controls and dedicated reporting for active traders.
+        </p>
+
+        <a class="service-card__cta" href="#" aria-label="Know more about Derivatives">Know More</a>
+      </article>
+
+      <!-- Commodity & Currency -->
+      <article class="service-card" role="listitem" aria-labelledby="svc-commodity">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+            <path d="M4 20h16M8 12h8M12 4v16" stroke="rgb(23,170,151)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+
+        <h3 id="svc-commodity" class="service-card__title">Commodity &amp; Currency Trading</h3>
+
+        <p class="service-card__desc">
+          Access commodity and forex markets with low-latency feeds, hedging tools and intuitive order types.
+        </p>
+
+        <a class="service-card__cta" href="#" aria-label="Know more about Commodity and Currency Trading">Know More</a>
+      </article>
+
+      <!-- Mutual Funds & ETFs -->
+      <article class="service-card" role="listitem" aria-labelledby="svc-mf">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" stroke="rgb(23,170,151)" stroke-width="1.6" fill="none"/>
+            <path d="M7 12h10" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+
+        <h3 id="svc-mf" class="service-card__title">Mutual Funds &amp; ETFs</h3>
+
+        <p class="service-card__desc">
+          Invest in diversified mutual funds and ETFs, SIP plans and automated rebalancing options for long-term goals.
+        </p>
+
+        <a class="service-card__cta" href="#" aria-label="Know more about Mutual Funds and ETFs">Know More</a>
+      </article>
+
+      <!-- IPO & Bonds -->
+      <article class="service-card" role="listitem" aria-labelledby="svc-ipo">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+            <path d="M3 20h18M6 12l3-6 3 6 3-4 3 4" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+
+        <h3 id="svc-ipo" class="service-card__title">IPO &amp; Bonds</h3>
+
+        <p class="service-card__desc">
+          Apply to IPOs, subscribe to fixed income offerings and manage bond portfolios with transparent yields and schedules.
+        </p>
+
+        <a class="service-card__cta" href="#" aria-label="Know more about IPO and Bonds">Know More</a>
+      </article>
+
+      <!-- PMS -->
+      <article class="service-card" role="listitem" aria-labelledby="svc-pms">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+            <rect x="3" y="6" width="18" height="12" rx="2" stroke="rgb(23,170,151)" stroke-width="1.6" fill="none"/>
+            <path d="M7 10h10" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+
+        <h3 id="svc-pms" class="service-card__title">Portfolio Management Services (PMS)</h3>
+
+        <p class="service-card__desc">
+          Discretionary and advisory PMS with personalised strategies, periodic reports and dedicated relationship managers.
+        </p>
+
+        <a class="service-card__cta" href="#" aria-label="Know more about PMS">Know More</a>
+      </article>
+
+      <!-- Algo / API Trading -->
+      <article class="service-card" role="listitem" aria-labelledby="svc-algo">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+            <path d="M3 12h18M8 7v10M16 7v10" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+
+        <h3 id="svc-algo" class="service-card__title">Algo Trading / API Trading</h3>
+
+        <p class="service-card__desc">
+          Powerful APIs, FIX connectivity and low-latency endpoints for automated strategies and institutional integration.
+        </p>
+
+        <a class="service-card__cta" href="#" aria-label="Know more about Algo and API Trading">Know More</a>
+      </article>
+
+      <!-- Investment Advisory -->
+      <article class="service-card" role="listitem" aria-labelledby="svc-advisory">
+        <div class="service-card__icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" focusable="false" aria-hidden="true">
+            <path d="M12 2l4 4-4 4-4-4 4-4zM6 14v6h12v-6" stroke="rgb(23,170,151)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+
+        <h3 id="svc-advisory" class="service-card__title">Investment Advisory</h3>
+
+        <p class="service-card__desc">
+          Research-led advisory, model portfolios and personalised guidance from certified advisors to match your risk profile.
+        </p>
+
+        <a class="service-card__cta" href="#" aria-label="Know more about Investment Advisory">Know More</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- <section class="slide" data-animate="slide">Slide Box</section> -->
+
+
+
+
+
+
+
+
+<!-- <section class="jump" data-animate="jump">Jump Box</section>
+
+<section class="fade" data-animate="fade">Fade In Box</section>
+
+<section class="slide" data-animate="slide">Slide Box</section> -->
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <a class="brand" href="./index.html" title="Hari IT Solutions">
+        <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+        <div class="brand-title">
+          <span class="title">STACKLY</span>
+        </div>
+      </a>
+
+      <div>
+        <h3 class="footer-title">About Us</h3>
+        <p class="footer-text">We provide the best products at the best prices. Your satisfaction is our priority.</p>
+        <div class="footer-social">
+          <a href="./404.html" class="social-icon">
+            <img src="./facebook (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./twitter (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./instagram (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./linkedin (1).webp" alt="">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-title">Quick Links</h3>
+      <ul class="footer-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./service.html">Brokerage Services</a></li>
+        <li><a href="./price.html">Pricing & Brokerage Plans</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="./dashboard.html">DashBoard</a></li>
+        <li><a href="./login.html">LogIn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3 class="footer-title">Contact</h3>
+      <p class="footer-text">123 gandhi St, City, Country</p>
+      <p class="footer-text mail">Email:support@brokerage.com</p>
+      <p class="footer-text">Phone: +123 456 7890</p>
+      <!-- <div class="footer-newsletter">
+        <input type="email" placeholder="Your email" class="newsletter-input">
+        <button class="newsletter-btn">Subscribe</button>
+      </div> -->
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 brokerage. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="./service.js"></script>
+</body>
+</html>

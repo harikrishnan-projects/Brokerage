@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="./bc remove logo.webp">
+  <title>Brokerage</title>
+  <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+
+<header class="header" id="site-header">
+  <div class="right">
+    <a class="brand" href="./index.html" title="Hari IT Solutions">
+      <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+      <div class="brand-title">
+        <span class="title">STACKLY</span>
+      </div>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="main-nav" aria-expanded="false">☰</button>
+  </div>
+
+  <div class="left">
+    <nav id="main-nav" class="navBar" aria-label="Main navigation">
+      <div class="navLinks">
+        <ul class="linkRight">
+          <li class="dropdown">
+            <a href="./home2.html" aria-haspopup="true" aria-expanded="false">Home ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="./home2.html">Home 2</a></li>
+            </ul>
+          </li>
+          <li><a href="./service.html">Brokerage Services</a></li>
+          <!-- <li><a href="./finance.html">Top Categories</a></li> -->
+          <li><a href="./price.html">Pricing & Brokerage Plans</a></li>
+          <!-- <li><a href="./testimonial.html">Security Section</a></li> -->
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./dashboard.html">DashBoard</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <button class="btn-cta" onclick="location.href='./login.html'">LogIn</button>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+<main class="page-contact">
+    <header class="contact-hero">
+      <div class="container">
+        <h1 class="hero-title">Get in touch</h1>
+        <p class="hero-sub">Questions about accounts, pricing or platform? Our team is here to help.</p>
+      </div>
+    </header>
+
+    <section class="contact-section container">
+      <!-- Contact Form -->
+      <div class="contact-card contact-form-card" aria-labelledby="contact-form-title">
+        <h2 id="contact-form-title">Send Us a Message</h2>
+        <p class="muted">Fill the form and our support team will respond within 24 hours.</p>
+
+        <form class="contact-form" id="contactForm" action="#" method="post" novalidate>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required />
+          <span class="error-message" id="errorName"></span>
+
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <span class="error-message" id="errorEmail"></span>
+
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" />
+          <span class="error-message" id="errorPhone"></span>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Short subject" required />
+          <span class="error-message" id="errorSubject"></span>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help..." required></textarea>
+          <span class="error-message" id="errorMessage"></span>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-primary">Request Consultation</button>
+            <button type="reset" class="btn-secondary">Reset</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info + Map -->
+      <aside class="contact-card contact-info-card" aria-labelledby="contact-info-title">
+        <h2 id="contact-info-title">Contact Details</h2>
+
+        <div class="info-row">
+          <strong>Office Address</strong>
+          <address>
+            123 Finance Tower,<br />
+            Business District,<br />
+            New Delhi, 110001
+          </address>
+        </div>
+
+        <div class="info-row">
+          <strong>Phone</strong>
+          <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+        </div>
+
+        <div class="info-row">
+          <strong>Email</strong>
+          <p><a href="mailto:support@brokerage.example">support@brokerage.example</a></p>
+        </div>
+
+        <div class="info-row">
+          <strong>Business Hours</strong>
+          <p>Mon – Fri: 9:00 AM – 6:00 PM<br />Sat: 10:00 AM – 2:00 PM</p>
+        </div>
+
+        <div class="map-wrapper" aria-hidden="false">
+          <!--
+            Replace the `src` value below with your Google Maps embed URL.
+            Example: get embed from Google Maps -> Share -> Embed a map -> copy iframe src
+          -->
+          <iframe
+            title="Brokerage Office Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14009.123456789!2d77.209021!3d28.613939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x123456789abcdef!2sNew%20Delhi!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+            width="100%"
+            height="260"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <p class="muted small">Prefer talking now? Use the phone number above or start a chat from the bottom-right corner.</p>
+      </aside>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Brokerage Solutions — All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+
+
+
+
+
+
+
+<!-- <section class="jump" data-animate="jump">Jump Box</section> -->
+
+<!-- <section class="fade" data-animate="fade">Fade In Box</section>
+
+<section class="slide" data-animate="slide">Slide Box</section> -->
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-about">
+      <a class="brand" href="./index.html" title="Hari IT Solutions">
+        <img src="./bc remove logo.webp" alt="Hari IT logo" width="40" height="40">
+        <div class="brand-title">
+          <span class="title">STACKLY</span>
+        </div>
+      </a>
+
+      <div>
+        <h3 class="footer-title">About Us</h3>
+        <p class="footer-text">We provide the best products at the best prices. Your satisfaction is our priority.</p>
+        <div class="footer-social">
+          <a href="./404.html" class="social-icon">
+            <img src="./facebook (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./twitter (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./instagram (1).webp" alt="">
+          </a>
+          <a href="./404.html" class="social-icon">
+            <img src="./linkedin (1).webp" alt="">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="footer-links">
+      <h3 class="footer-title">Quick Links</h3>
+      <ul class="footer-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./service.html">Brokerage Services</a></li>
+        <li><a href="./price.html">Pricing & Brokerage Plans</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="./dashboard.html">DashBoard</a></li>
+        <li><a href="./login.html">LogIn</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h3 class="footer-title">Contact</h3>
+      <p class="footer-text">123 gandhi St, City, Country</p>
+      <p class="footer-text mail">Email:support@brokerage.com</p>
+      <p class="footer-text">Phone: +123 456 7890</p>
+      <!-- <div class="footer-newsletter">
+        <input type="email" placeholder="Your email" class="newsletter-input">
+        <button class="newsletter-btn">Subscribe</button>
+      </div> -->
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 brokerage. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="./contact.js"></script>
+</body>
+</html>

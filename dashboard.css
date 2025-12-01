@@ -1,0 +1,193 @@
+/* -------------------- BASE -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  color: #0f172a;
+}
+
+
+
+/* dashboard layout */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------- SIDEBAR -------------------- */
+.sidebar {
+  width: 100%;
+  background-color: rgb(23, 170, 151);
+  color: #ffffff;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.sidebar-logo h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sidebar-nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar-nav ul li a.active,
+.sidebar-nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* -------------------- MAIN CONTENT -------------------- */
+.main-content {
+  flex: 1;
+  padding: 20px 16px;
+}
+
+/* top header */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.top-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.header-actions button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: 10px;
+  background-color: rgb(23, 170, 151);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.header-actions button:hover {
+  background-color: rgb(20, 150, 135);
+}
+
+/* -------------------- CARDS -------------------- */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(2, 6, 23, 0.04);
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: rgb(23, 170, 151);
+}
+
+.card p {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* -------------------- TABLE -------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+th {
+  background-color: rgba(23, 170, 151, 0.08);
+  color: rgb(23, 170, 151);
+  font-weight: 700;
+}
+
+tr:hover {
+  background-color: rgba(23, 170, 151, 0.05);
+}
+
+/* -------------------- TAB CONTENT -------------------- */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* -------------------- MEDIA QUERY -------------------- */
+@media (min-width: 768px) {
+  .dashboard {
+    flex-direction: row;
+  }
+
+  .sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* makes sidebar full viewport height on mobile */
+  }
+
+  .sidebar-nav ul {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+
+  .main-content {
+    padding: 24px;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
