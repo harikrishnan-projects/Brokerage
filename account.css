@@ -212,6 +212,7 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
@@ -222,12 +223,14 @@ main {
   font-size: 3rem;
   color: rgb(23, 170, 151);
   margin-bottom: 20px;
+  width: 500px;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   color: #000;
   margin-bottom: 30px;
+  width: 500px;
 }
 
 .hero-buttons .btn {
@@ -260,7 +263,7 @@ main {
 
 .hero-image img {
   max-width: 500px;
-  width: 100%;
+  width: 80%;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
@@ -274,10 +277,12 @@ main {
 
   .hero-text h1 {
     font-size: 2rem;
+    width: 400px;
   }
 
   .hero-text p {
     font-size: 1rem;
+    width: 400px;
   }
 
   .hero-buttons .btn {

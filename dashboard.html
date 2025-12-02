@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./bc remove logo.webp">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dashboard</title>
   <link rel="stylesheet" href="dashboard.css">
 </head>
@@ -11,11 +10,12 @@
   <div class="dashboard">
 
     <!-- Sidebar -->
-    <aside class="sidebar">
+    <aside class="sidebar" role="navigation" aria-label="Primary">
       <div class="sidebar-logo">
         <h1>SmartBroker</h1>
       </div>
-      <nav class="sidebar-nav">
+
+      <nav class="sidebar-nav" aria-label="Main menu">
         <ul>
           <li><a href="#" class="active" data-target="dashboard">Dashboard</a></li>
           <li><a href="#" data-target="portfolio">Portfolio</a></li>
@@ -28,13 +28,13 @@
     </aside>
 
     <!-- Main content -->
-    <main class="main-content">
+    <main class="main-content" role="main">
       <!-- Top Header -->
       <header class="top-header">
         <h2>Welcome, Trader</h2>
         <div class="header-actions">
-          <button class="btn-alert">Notifications</button>
-          <button class="btn-profile">Profile</button>
+          <button class="btn-alert" onclick="window.location.href='./404.html'">Notifications</button>
+          <button class="btn-profile" onclick="window.location.href='./404.html'">Profile</button>
         </div>
       </header>
 
@@ -125,27 +125,6 @@
 
   </div>
 
-  <!-- JavaScript for tab switching -->
-  <script>
-    const tabs = document.querySelectorAll('.sidebar-nav a');
-    const contents = document.querySelectorAll('.tab-content');
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        // remove active class from all tabs
-        tabs.forEach(t => t.classList.remove('active'));
-        // add active class to clicked tab
-        this.classList.add('active');
-
-        // hide all tab contents
-        contents.forEach(c => c.classList.remove('active'));
-        // show selected content
-        const target = document.getElementById(this.dataset.target);
-        target.classList.add('active');
-      });
-    });
-  </script>
+  <script src="dashboard.js"></script>
 </body>
 </html>

@@ -259,7 +259,7 @@ main {
   max-width: 400px;
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  /* box-shadow: 0 10px 30px rgba(0,0,0,0.2); */
 }
 
 /* Responsive 768px */
@@ -318,6 +318,77 @@ main {
   gap: 20px;
   flex-wrap: wrap;
 }
+
+/* Placeholder box styling */
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  background: #f5f7f8;
+  border: 1px solid #e1e4e6;
+  padding: 18px 20px;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+/* Heading */
+.placeholder h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Normal text */
+.placeholder p {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Bold values */
+.placeholder strong {
+  font-weight: 700;
+}
+
+/* 24h change green color */
+.placeholder span {
+  font-weight: 600;
+}
+
+/* heatmap box layout */
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* each block */
+.heatmap-grid .box {
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* colors */
+.box.up {
+  background: #12c972;  /* green */
+}
+
+.box.down {
+  background: #e74c3c; /* red */
+}
+
+.box.flat {
+  background: #f6c344; /* yellow */
+}
+
 
 .dashboard-card {
   flex: 1;
@@ -382,6 +453,18 @@ main {
     flex-direction: column;
   }
 
+  .placeholder {
+    padding: 15px;
+  }
+
+  .placeholder h4 {
+    font-size: 16px;
+  }
+
+  .placeholder p {
+    font-size: 14px;
+  }
+
   .dashboard-card {
     width: 100%;
     margin-bottom: 20px;
@@ -389,6 +472,10 @@ main {
 
   .dashboard-title {
     font-size: 2rem;
+  }
+
+  .heatmap-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .placeholder {

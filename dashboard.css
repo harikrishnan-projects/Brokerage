@@ -1,4 +1,4 @@
-/* -------------------- BASE -------------------- */
+/* -------------------- BASE (mobile-first) -------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -13,38 +13,85 @@ body {
   color: #0f172a;
 }
 
-
-
 /* dashboard layout */
 .dashboard {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-/* -------------------- SIDEBAR -------------------- */
+/* -------------------- SIDEBAR (mobile) - top bar -------------------- */
 .sidebar {
   width: 100%;
   background-color: rgb(23, 170, 151);
   color: #ffffff;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(2,6,23,0.06);
 }
 
+/* logo */
 .sidebar-logo {
-  text-align: center;
-  margin-bottom: 24px;
+  text-align: left;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .sidebar-logo h1 {
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   font-weight: 800;
+  line-height: 1;
+  color: #fff;
+  margin: 0;
+}
+
+/* mobile menu button (created by JS but keep some base styles) */
+.mobile-nav-toggle {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* nav - mobile: horizontal scroll */
+.sidebar-nav {
+  display: block;
+  width: auto;
+  overflow: hidden;
 }
 
 .sidebar-nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  gap: 8px;
+  align-items: center;
+  padding: 6px 6px 6px 0;
+  margin: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+/* nav item */
+.sidebar-nav ul li {
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar-nav ul li a {
@@ -52,51 +99,60 @@ body {
   color: #ffffff;
   font-weight: 600;
   padding: 8px 12px;
-  border-radius: 6px;
-  transition: background-color 0.2s ease-in-out;
+  border-radius: 8px;
+  display: inline-block;
+  white-space: nowrap;
+  transition: background-color 0.2s ease-in-out, transform 0.08s;
 }
 
+/* active / hover */
 .sidebar-nav ul li a.active,
 .sidebar-nav ul li a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-1px);
 }
 
 /* -------------------- MAIN CONTENT -------------------- */
 .main-content {
   flex: 1;
-  padding: 20px 16px;
+  padding: 16px;
 }
 
-/* top header */
+/* top header (inside content) */
 .top-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
+  margin-top: 12px;
   margin-bottom: 24px;
 }
 
 .top-header h2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
+  margin: 0;
 }
 
+/* header action buttons */
 .header-actions button {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 12px;
   padding-right: 12px;
-  margin-left: 10px;
+  margin-left: 8px;
   background-color: rgb(23, 170, 151);
   color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, transform 0.08s;
 }
 
 .header-actions button:hover {
   background-color: rgb(20, 150, 135);
+  transform: translateY(-1px);
 }
 
 /* -------------------- CARDS -------------------- */
@@ -124,6 +180,7 @@ body {
 .card p {
   font-size: 1.25rem;
   font-weight: 700;
+  margin: 0;
 }
 
 /* -------------------- TABLE -------------------- */
@@ -135,7 +192,8 @@ table {
   overflow: hidden;
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 12px;
   border-bottom: 1px solid rgba(15, 23, 42, 0.06);
@@ -160,32 +218,103 @@ tr:hover {
   display: block;
 }
 
-/* -------------------- MEDIA QUERY -------------------- */
-@media (min-width: 768px) {
-  .dashboard {
-    flex-direction: row;
+/* mobile collapsed nav styles (for the toggle) */
+.sidebar-nav.open {
+  display: block !important;
+}
+
+@media (max-width: 767px) {
+  .sidebar-nav {
+    display: none;
+  }
+  .sidebar-nav.open {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 56px;
+    padding: 12px;
+    background: rgb(23, 170, 151);
+    z-index: 9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
   }
 
+  .sidebar-nav.open ul {
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 12px;
+  }
+
+  .sidebar-nav.open ul li a {
+    display: block;
+    padding: 10px 12px;
+  }
+}
+
+/* -------------------- DESKTOP: min-width: 768px -------------------- */
+@media (min-width: 768px) {
+
+  /* layout becomes two columns */
+  .dashboard {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  /* sidebar becomes vertical left column */
   .sidebar {
     width: 220px;
-    flex-shrink: 0;
+    min-width: 220px;
+    max-width: 260px;
     height: 100vh;
-    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
     flex-direction: column;
-    height: 100vh; /* makes sidebar full viewport height on mobile */
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    overflow: visible;
+    box-shadow: none;
+  }
+
+  /* keep brand at top */
+  .sidebar-logo {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .sidebar-logo h1 {
+    font-size: 1.8rem;
+  }
+
+  /* nav becomes vertical */
+  .sidebar-nav {
+    width: 100%;
   }
 
   .sidebar-nav ul {
+    display: flex;
     flex-direction: column;
     gap: 12px;
-    align-items: flex-start;
-    padding-left: 20px;
+    padding-left: 0;
+    margin: 0;
+    overflow: visible;
   }
 
+  .sidebar-nav ul li a {
+    padding: 10px 12px;
+    border-radius: 6px;
+  }
+
+  /* main content spacing for desktop */
   .main-content {
-    padding: 24px;
+    padding: 28px;
   }
 
+  /* two column card grid */
   .dashboard-cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;

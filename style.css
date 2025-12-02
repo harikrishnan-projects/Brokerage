@@ -270,8 +270,8 @@ main {
 
 .btn-outline {
   background-color: transparent;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  color:black;
+  border: 1px solid black;
 }
 
 /* -------------------- MEDIA QUERY 768px -------------------- */
@@ -335,7 +335,7 @@ main {
 .features-heading {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #0f172a;
+  color:rgb(23, 170, 151);
   margin-bottom: 10px;
 }
 
@@ -356,7 +356,7 @@ main {
 }
 
 .feature-card {
-  background-color: #ffffff;
+  background-color: rgb(213, 241, 237);
   border-radius: 12px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -925,6 +925,11 @@ main {
   gap: 3px;
 }
 
+.meta-text img{
+  width: 150px;
+  height: 150px;
+}
+
 .client-name {
   font-weight: 700;
   font-size: 0.98rem;
@@ -946,6 +951,12 @@ main {
   justify-content: center;
   margin-left: 6px;
 }
+
+/* .verified-badge img{
+  width: 200px;
+  height: 100px;
+} */
+
 
 /* testimonial text */
 .testimonial-text {
