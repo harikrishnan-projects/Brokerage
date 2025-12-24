@@ -10,6 +10,104 @@ html, body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
 }
+
+
+/* ===== FLOATING ROUND BACKGROUND ===== */
+.floating-bg {
+  position: fixed;
+  inset: 0;
+  background: rgb(183, 240, 231);
+  z-index: -1;
+  overflow: hidden;
+}
+
+.floating-bg span {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgb(116, 229, 214);
+  opacity: 0.6;
+}
+
+
+.floating-bg {
+  position: fixed;
+  inset: 0;
+  background: rgb(183, 240, 231);
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Common circle style */
+.floating-bg span {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgb(116, 229, 214);
+  opacity: 0.6;
+}
+
+/* Individual motion (different directions) */
+.floating-bg span:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  animation: floatOne 22s linear infinite;
+}
+
+.floating-bg span:nth-child(2) {
+  top: 60%;
+  left: 70%;
+  animation: floatTwo 28s linear infinite;
+}
+
+.floating-bg span:nth-child(3) {
+  top: 30%;
+  left: 50%;
+  animation: floatThree 34s linear infinite;
+}
+
+.floating-bg span:nth-child(4) {
+  top: 75%;
+  left: 20%;
+  animation: floatFour 40s linear infinite;
+}
+
+/* ===== RANDOM-LIKE MOVEMENTS ===== */
+
+@keyframes floatOne {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(120px, -80px); }
+  50%  { transform: translate(-60px, 100px); }
+  75%  { transform: translate(80px, 40px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes floatTwo {
+  0%   { transform: translate(0, 0); }
+  30%  { transform: translate(-100px, 60px); }
+  60%  { transform: translate(140px, -40px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes floatThree {
+  0%   { transform: translate(0, 0); }
+  20%  { transform: translate(60px, 120px); }
+  50%  { transform: translate(-120px, -60px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes floatFour {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-80px, -120px); }
+  55%  { transform: translate(100px, 80px); }
+  100% { transform: translate(0, 0); }
+}
+
+
+
+
 img { max-width: 100%; height: auto; display: block; }
 span{color: black;}
 /* Header */
@@ -201,7 +299,7 @@ main {
 
 /* Hero Section Styles */
 .hero {
-  background-color: rgb(23, 170, 151);
+  /* background-color: rgb(23, 170, 151); */
   color: #fff;
   padding: 80px 20px;
   display: flex;
@@ -221,11 +319,13 @@ main {
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  color: black;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 30px;
+  color: #555;
 }
 
 .hero-buttons .btn {
@@ -238,8 +338,8 @@ main {
 }
 
 .hero-buttons .download {
-  background-color: #fff;
-  color: rgb(23, 170, 151);
+  background-color: rgb(23, 170, 151);
+  color: black;
 }
 
 .hero-buttons .download:hover {
@@ -247,8 +347,8 @@ main {
 }
 
 .hero-buttons .demo {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
+  background-color: black;
+  color: rgb(23, 170, 151);
 }
 
 .hero-buttons .demo:hover {
