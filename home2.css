@@ -965,91 +965,106 @@ main {
 
 
 
+/* ===== Rewards Highlight Section ===== */
 
-/* Rewards / Cashback / Refer & Earn - Alternate Style */
-.rewards-section-alt {
-  /* background-color: #fff; */
-  padding: 60px 20px;
+.rewards-highlight {
+  padding: 90px 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #000;
-  text-align: center;
+  background: #f6fbfa;
 }
 
-.rewards-container-alt {
-  max-width: 1200px;
+.rewards-wrapper {
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-.section-title {
-  font-size: 2.5rem;
-  color: rgb(23, 170, 151);
-  margin-bottom: 10px;
+/* Header */
+.rewards-header {
+  max-width: 700px;
+  margin-bottom: 60px;
+}
+
+.rewards-header h2 {
+  font-size: 2.7rem;
   font-weight: 700;
+  margin-bottom: 12px;
 }
 
-.section-subtitle {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 50px;
+.rewards-header p {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.6;
 }
 
-/* Features Row */
-.rewards-features {
+/* Reward Lines */
+.rewards-lines {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* Single Line */
+.reward-line {
+  display: flex;
   gap: 30px;
+  align-items: center;
+  padding-left: 25px;
+  position: relative;
 }
 
-.reward-feature {
-  display: flex;
-  align-items: flex-start;
-  max-width: 350px;
+/* Accent bar */
+.reward-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(23, 170, 151),
+    #023073
+  );
+  border-radius: 10px;
 }
 
-.feature-icon {
-  font-size: 3rem;
-  margin-right: 20px;
-  color: rgb(23, 170, 151);
+/* Text */
+.reward-line strong {
+  font-size: 1.4rem;
+  min-width: 260px;
+  font-weight: 600;
 }
 
-.feature-text h3 {
-  font-size: 1.5rem;
-  margin-bottom: 8px;
-  color: rgb(23, 170, 151);
-}
-
-.feature-text p {
+.reward-line span {
   font-size: 1rem;
-  color: #000;
-  line-height: 1.5;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Responsive 768px */
+/* Hover motion */
+.reward-line:hover {
+  transform: translateX(6px);
+  transition: transform 0.3s ease;
+}
+
+/* ===== Responsive (768px) ===== */
 @media (max-width: 768px) {
-  .section-title {
+  .rewards-header h2 {
     font-size: 2rem;
   }
 
-  .section-subtitle {
+  .rewards-header p {
     font-size: 1rem;
-    margin-bottom: 30px;
   }
 
-  .rewards-features {
+  .reward-line {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
   }
 
-  .reward-feature {
-    max-width: 100%;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .feature-icon {
-    margin: 0 0 15px 0;
+  .reward-line strong {
+    min-width: auto;
+    font-size: 1.25rem;
   }
 }
 
@@ -1058,88 +1073,197 @@ main {
 
 
 
-
-
-
-
-
-/* Seamless Deposits & Withdrawals Section */
-.deposits-section {
-  /* background-color: #fff; */
-  padding: 60px 20px;
+/* Rewards Details Section */
+.rewards-details {
+  width: 100%;
+  padding: 70px 20px;
+  background: #f6fbfa;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #000;
-  text-align: center;
 }
 
+.rewards-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+/* Each row */
+.rewards-item {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Reverse layout */
+.rewards-item.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image */
+.rewards-image {
+  flex: 1;
+}
+
+.rewards-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  transition: transform 0.6s ease;
+}
+
+.rewards-image img:hover {
+  transform: scale(1.04);
+}
+
+/* Content */
+.rewards-content {
+  flex: 1;
+}
+
+.rewards-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgb(23, 170, 151);
+  margin-bottom: 12px;
+}
+
+.rewards-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+  max-width: 520px;
+}
+
+/* -------------------- MEDIA QUERY 768px -------------------- */
+@media (max-width: 768px) {
+  .rewards-wrapper {
+    gap: 50px;
+  }
+
+  .rewards-item,
+  .rewards-item.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rewards-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .rewards-content p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+/* Container Styling */
 .deposits-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  /* background-color: #f9f9f9; */
 }
 
+/* Section Title */
 .section-title {
   font-size: 2.5rem;
-  color: rgb(23, 170, 151);
+  color: #1a1a1a;
   margin-bottom: 10px;
-  font-weight: 700;
 }
 
+/* Section Subtitle */
 .section-subtitle {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 50px;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
 }
 
-/* Steps Layout */
+/* Deposit Steps Container */
 .deposit-steps {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 
+/* Individual Step Card */
 .deposit-step {
-  flex: 1 1 calc(25% - 30px);
-  text-align: center;
+  background-color: #fff;
+  flex: 1 1 22%;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.deposit-step:hover{
+  border: 10px solid black;
+  background-color: rgb(23, 170, 151);
+}
+
+/* Hover Effect */
+.deposit-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Step Icon */
 .step-icon {
-  font-size: 3rem;
-  color: rgb(23, 170, 151);
+  font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
+/* Step Title */
 .deposit-step h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: #111;
   margin-bottom: 10px;
-  color: rgb(23, 170, 151);
 }
 
+/* Step Description */
 .deposit-step p {
-  font-size: 1rem;
-  color: #000;
+  font-size: 0.95rem;
+  color: black;
   line-height: 1.5;
 }
 
-/* Responsive 768px */
+/* ----------------- Media Queries ----------------- */
+@media (max-width: 1024px) {
+  .deposit-step {
+    flex: 1 1 45%;
+  }
+}
+
 @media (max-width: 768px) {
+  .deposits-container {
+    padding: 40px 15px;
+  }
+
   .section-title {
     font-size: 2rem;
   }
 
   .section-subtitle {
     font-size: 1rem;
-    margin-bottom: 30px;
   }
 
   .deposit-steps {
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
   }
 
   .deposit-step {
     flex: 1 1 100%;
-    margin-bottom: 30px;
   }
 }
 
